@@ -16,7 +16,7 @@
      }
 如何写一个程序计算用户输入的数字的平均数，并输出所有大于平均数的数？（需要记录每一个数）
 如何记录很多数？用数组
-          #include <stdio.h>
+         #include <stdio.h>
          int main()
          {
          int x;
@@ -31,7 +31,13 @@
                 scanf("%d",&x);
          }
          if( cnt > 0 ){
-              printf("%f\n",sum/cnt)
+              printf("%f\n",sum/cnt);
+              int i;
+              for( i=0; i<cnt; i++){
+                       if( number[i] > sum/cnt ){
+                                printf("%d\n",number[i]);
+                       }
+              }
          }
          return 0;
          }
