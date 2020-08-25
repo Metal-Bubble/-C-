@@ -22,22 +22,26 @@
          int x;
          double sum = 0;
          int cnt = 0;
-         int number [100];
+         int number [100];              //定义数组
          scanf("%d",&x);
          while( x != -1 ){
-                number[cnt] = x;
+                number[cnt] = x;        //对数组中的元素赋值
                 sum += x;
                 cnt ++;
                 scanf("%d",&x);
          }
          if( cnt > 0 ){
               printf("%f\n",sum/cnt);
-              int i;
-              for( i=0; i<cnt; i++){
-                       if( number[i] > sum/cnt ){
+              int i;    
+              for( i=0; i<cnt; i++){                        //遍历数组
+                       if( number[i] > sum/cnt ){           //使用数组中的元素
                                 printf("%d\n",number[i]);
                        }
               }
          }
          return 0;
          }
+但是这个程序存在安全隐患：我们定义的数组有100个下标，可能不够。
+
+1.2数组的使用：如何定义和使用数组，数组的下标和下标的范围
+     
