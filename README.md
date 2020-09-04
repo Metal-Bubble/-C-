@@ -73,4 +73,5 @@ int a[10]
     segmentation fault
     但是也可能运气好，没造成严重的结果
     所以这是程序员的责任来保证程序只使用有效的下标值：[0，数组的大小-1]
-    average[5]
+    average[5] 
+    
