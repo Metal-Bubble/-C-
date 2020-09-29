@@ -74,4 +74,40 @@ int a[10]
     但是也可能运气好，没造成严重的结果
     所以这是程序员的责任来保证程序只使用有效的下标值：[0，数组的大小-1]
     average[5] 
-    
+计算平均数
+    #include <stdio.h>
+    int main ()
+    {
+        int x;
+        double sum = 0;
+        int cnt;
+        printf("请输入数字的数量：");
+        scanf("%d",&cnt);
+        if ( cnt > 0 ){
+            int number [cnt];
+            scanf("%d",&x);
+            while ( x != -1){
+                number [cnt] = x;
+                sum += x;
+                cnt ++;
+                scanf("%d",&x); 
+            }
+        }
+    }
+长度为0的数组
+    int a[0];
+    可以存在，但是无用    
+
+1.3数组的例子：统计个数
+写一个程序，输入数量不确定的[0，9]
+
+
+
+
+
+
+
+
+
+
+
